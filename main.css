@@ -278,5 +278,25 @@ h1 {
     background: white;
     clip-path: polygon(5px 116px, 7px 91px, 14px 67px, 24px 22px, 32px 65px, 32px 89px, 36px 106px, 34px 124px, 20px 129px);
    }
+   &:nth-child(13){
+    position: absolute;
+    top: 100%;
+    left: 37%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 60px;
+    height: 150px;
+    background: white;
+    clip-path: polygon(6px 110px, 7px 91px, 14px 67px, 32px 37px, 31px 81px, 34px 105px, 34px 124px, 18px 124px);
+   }
+   &:nth-child(14) {
+    position: absolute;
+    top: 100%;
+    left: 69%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 60px;
+    height: 150px;
+    background: white;
+    clip-path: polygon(11px 108px, 10px 92px, 14px 67px, 16px 36px, 31px 81px, 34px 99px, 28px 115px, 16px 119px);
+   }
   }
 }
