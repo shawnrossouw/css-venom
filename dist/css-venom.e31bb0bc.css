@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Jolly+Lodger');
+@import url("https://fonts.googleapis.com/css?family=Jolly+Lodger");
 
 :root {
-  --venom: 'Jolly Lodger', sans-serif;
-
+  --venom: "Jolly Lodger", sans-serif;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -45,20 +44,20 @@ h1 {
     margin: 1em;
   }
 .venom-left-eye:before {
-        content: '';
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        -webkit-transform: translateX(-81%) translateY(-41%) rotateZ(34deg);
-            -ms-transform: translateX(-81%) translateY(-41%) rotate(34deg);
-                transform: translateX(-81%) translateY(-41%) rotateZ(34deg);
-        width: 210px;
-        height: 120px;
-        border-bottom: 180px solid white;
-        border-radius: 0 0 0 100%;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                transform-origin: right;
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translateX(-81%) translateY(-41%) rotateZ(34deg);
+          -ms-transform: translateX(-81%) translateY(-41%) rotate(34deg);
+              transform: translateX(-81%) translateY(-41%) rotateZ(34deg);
+      width: 210px;
+      height: 120px;
+      border-bottom: 180px solid white;
+      border-radius: 0 0 0 100%;
+      -webkit-transform-origin: right;
+          -ms-transform-origin: right;
+              transform-origin: right;
     }
 .venom-right-eye {
     position: absolute;
@@ -71,305 +70,579 @@ h1 {
     margin: 1em;
   }
 .venom-right-eye:before {
-        content: '';
-        position: absolute;
-        top: 31%;
-        left: 50%;
-        -webkit-transform: translateX(-115%) translateY(-56%) rotateY(180deg) rotateZ(34deg);
-                transform: translateX(-115%) translateY(-56%) rotateY(180deg) rotateZ(34deg);
-        width: 210px;
-        height: 120px;
-        border-bottom: 180px solid white;
-        border-radius: 0 0 0 100%;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                transform-origin: right;
+      content: "";
+      position: absolute;
+      top: 31%;
+      left: 50%;
+      -webkit-transform: translateX(-115%) translateY(-56%) rotateY(180deg)
+        rotateZ(34deg);
+              transform: translateX(-115%) translateY(-56%) rotateY(180deg)
+        rotateZ(34deg);
+      width: 210px;
+      height: 120px;
+      border-bottom: 180px solid white;
+      border-radius: 0 0 0 100%;
+      -webkit-transform-origin: right;
+          -ms-transform-origin: right;
+              transform-origin: right;
     }
 .venom-mouth {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    width: 0px;
+    height: 1px;
+    background: white;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    border-radius: 0 0 80% 80%;
+    border-bottom: 219px solid red;
+  }
+.venom-mouth:before {
+      content: "";
       position: absolute;
-      top: 430px;
+      top: 0%;
+      left: 30%;
+      -webkit-transform: translateX(-99%) translateY(-50%);
+          -ms-transform: translateX(-99%) translateY(-50%);
+              transform: translateX(-99%) translateY(-50%);
+      width: 245px;
+      height: 220px;
+      border-bottom: 280px solid rgb(155, 32, 32);
+      border-radius: 0 0 0 80%;
+      -webkit-transform-origin: right;
+          -ms-transform-origin: right;
+              transform-origin: right;
+    }
+.venom-mouth:after {
+      content: "";
+      position: absolute;
+      top: 31%;
+      left: 60%;
+      -webkit-transform: translateX(-100%) translateY(-50%) rotateY(180deg);
+              transform: translateX(-100%) translateY(-50%) rotateY(180deg);
+      width: 245px;
+      height: 220px;
+      border-bottom: 280px solid rgb(155, 32, 32);
+      border-radius: 0 0 0 80%;
+      -webkit-transform-origin: right;
+          -ms-transform-origin: right;
+              transform-origin: right;
+      z-index: -1;
+    }
+.venom-mouth-bottom {
+      position: absolute;
+      top: 70%;
       left: 50%;
-      width: 0px;
+      -webkit-transform: translateX(-50%) translateY(66%);
+          -ms-transform: translateX(-50%) translateY(66%);
+              transform: translateX(-50%) translateY(66%);
+      width: 300px;
       height: 1px;
-      background: white;
+    }
+.venom-mouth-bottom:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 145%;
+        -webkit-transform: translateX(-62%) translateY(-33%) rotate(24deg);
+            -ms-transform: translateX(-62%) translateY(-33%) rotate(24deg);
+                transform: translateX(-62%) translateY(-33%) rotate(24deg);
+        width: 200px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgb(26, 26, 26);
+        z-index: 1;
+      }
+.venom-mouth-bottom:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        -webkit-transform: translateX(-170%) translateY(-33%) rotate(-24deg);
+            -ms-transform: translateX(-170%) translateY(-33%) rotate(-24deg);
+                transform: translateX(-170%) translateY(-33%) rotate(-24deg);
+        width: 200px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgb(26, 26, 26);
+        z-index: 1;
+      }
+.venom-tongue {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-10%);
+        -ms-transform: translateX(-50%) translateY(-10%);
+            transform: translateX(-50%) translateY(-10%);
+    width: 130px;
+    height: 90px;
+    border-bottom: 150px solid rgba(255, 45, 45, 0.8);
+    border-radius: 0 0 0 100%;
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+  }
+.venom-tongue-inside {
+      position: absolute;
+      top: 385px;
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
           -ms-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%);
-      border-radius: 0 0 80% 80%;
-      border-bottom: 219px solid red;
-  }
-.venom-mouth:before {
-        content: '';
-        position: absolute;
-        top: 0%;
-        left: 30%;
-        -webkit-transform: translateX(-99%) translateY(-50%);
-            -ms-transform: translateX(-99%) translateY(-50%);
-                transform: translateX(-99%) translateY(-50%);
-        width: 245px;
-        height: 220px;
-        border-bottom: 280px solid rgb(155, 32, 32);
-        border-radius: 0 0 0 80%;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                transform-origin: right;
-      }
-.venom-mouth:after {
-        content: '';
-        position: absolute;
-        top: 31%;
-        left: 60%;
-        -webkit-transform: translateX(-100%) translateY(-50%) rotateY(180deg);
-                transform: translateX(-100%) translateY(-50%) rotateY(180deg);
-        width: 245px;
-        height: 220px;
-        border-bottom: 280px solid rgb(155, 32, 32);
-        border-radius: 0 0 0 80%;
-        -webkit-transform-origin: right;
-            -ms-transform-origin: right;
-                transform-origin: right;
-        z-index: -1;
-      }
-.venom-mouth-bottom {
-          position: absolute;
-          top: 70%;
-          left: 50%;
-          -webkit-transform: translateX(-50%) translateY(66%);
-              -ms-transform: translateX(-50%) translateY(66%);
-                  transform: translateX(-50%) translateY(66%);
-          width: 300px;
-          height: 1px;
-      }
-.venom-mouth-bottom:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 145%;
-            -webkit-transform: translateX(-62%) translateY(-33%) rotate(24deg);
-                -ms-transform: translateX(-62%) translateY(-33%) rotate(24deg);
-                    transform: translateX(-62%) translateY(-33%) rotate(24deg);
-            width: 200px;
-            height: 500px;
-            border-radius: 50%;
-            background: rgb(26, 26, 26);
-            z-index: 1;
-          }
-.venom-mouth-bottom:after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 45%;
-            -webkit-transform: translateX(-170%) translateY(-33%) rotate(-24deg);
-                -ms-transform: translateX(-170%) translateY(-33%) rotate(-24deg);
-                    transform: translateX(-170%) translateY(-33%) rotate(-24deg);
-            width: 200px;
-            height: 500px;
-            border-radius: 50%;
-            background: rgb(26, 26, 26);
-            z-index: 1;
-          }
-.venom-tongue {
-   position: absolute;
-   top: 350px;
-   left: 50%;
-   -webkit-transform: translateX(-50%) translateY(-10%);
-       -ms-transform: translateX(-50%) translateY(-10%);
-           transform: translateX(-50%) translateY(-10%);
-   width: 200px;
-   height: 200px;
-   background: rgb(26, 26, 26);
-   -webkit-filter: blur(40px);
-           filter: blur(40px);
-  
-  }
+      width: 200px;
+      height: 200px;
+      background: rgb(26, 26, 26);
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+    }
 .venom-teeth {
     position: absolute;
     top: 209px;
     width: 100%;
     height: 300px;
   }
-.venom-tooth:nth-child(1){
-        position: absolute;
-        top: 40%;
-        left: 25%;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-                transform: translateX(-50%) translateY(-50%);
-        width: 50px;
-        height: 100px;
-        background: white;
-        -webkit-clip-path: polygon(-1px 37px, 8px 12px, 20px 7px, 38px 14px, 18px 27px, 24px 101px);
-                clip-path: polygon(-1px 37px, 8px 12px, 20px 7px, 38px 14px, 18px 27px, 24px 101px);
-      }
-.venom-tooth:nth-child(2){
-        position: absolute;
-        top: 45%;
-        left: 30%;
-        -webkit-transform: translateX(-48%) translateY(-50%);
-            -ms-transform: translateX(-48%) translateY(-50%);
-                transform: translateX(-48%) translateY(-50%);
-        width: 50px;
-        height: 120px;
-        background: white;
-        -webkit-clip-path: polygon(-2px 44px, 21px 10px, 52px 12px, 21px 35px, 20px 122px);
-                clip-path: polygon(-2px 44px, 21px 10px, 52px 12px, 21px 35px, 20px 122px);
-      }
+.venom-tooth:nth-child(1) {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 50px;
+      height: 100px;
+      background: white;
+      -webkit-clip-path: polygon(
+        -1px 37px,
+        8px 12px,
+        20px 7px,
+        38px 14px,
+        18px 27px,
+        24px 101px
+      );
+              clip-path: polygon(
+        -1px 37px,
+        8px 12px,
+        20px 7px,
+        38px 14px,
+        18px 27px,
+        24px 101px
+      );
+    }
+.venom-tooth:nth-child(2) {
+      position: absolute;
+      top: 45%;
+      left: 30%;
+      -webkit-transform: translateX(-48%) translateY(-50%);
+          -ms-transform: translateX(-48%) translateY(-50%);
+              transform: translateX(-48%) translateY(-50%);
+      width: 50px;
+      height: 120px;
+      background: white;
+      -webkit-clip-path: polygon(
+        -2px 44px,
+        21px 10px,
+        52px 12px,
+        21px 35px,
+        20px 122px
+      );
+              clip-path: polygon(
+        -2px 44px,
+        21px 10px,
+        52px 12px,
+        21px 35px,
+        20px 122px
+      );
+    }
 .venom-tooth:nth-child(3) {
-    position: absolute;
-    top: 51%;
-    left: 36%;
-    -webkit-transform: translateX(-49%) translateY(-50%);
-        -ms-transform: translateX(-49%) translateY(-50%);
-            transform: translateX(-49%) translateY(-50%);
-    width: 50px;
-    height: 130px;
-    background: white;
-    -webkit-clip-path: polygon(-2px 31px, 25px 2px, 52px 0px, 25px 27px, 20px 122px);
-            clip-path: polygon(-2px 31px, 25px 2px, 52px 0px, 25px 27px, 20px 122px);
-   }
+      position: absolute;
+      top: 51%;
+      left: 36%;
+      -webkit-transform: translateX(-49%) translateY(-50%);
+          -ms-transform: translateX(-49%) translateY(-50%);
+              transform: translateX(-49%) translateY(-50%);
+      width: 50px;
+      height: 130px;
+      background: white;
+      -webkit-clip-path: polygon(-2px 31px, 25px 2px, 52px 0px, 25px 27px, 20px 122px);
+              clip-path: polygon(-2px 31px, 25px 2px, 52px 0px, 25px 27px, 20px 122px);
+    }
 .venom-tooth:nth-child(4) {
-    position: absolute;
-    top: 52%;
-    left: 41%;
-    -webkit-transform: translateX(-49%) translateY(-50%);
-        -ms-transform: translateX(-49%) translateY(-50%);
-            transform: translateX(-49%) translateY(-50%);
-    width: 50px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(4px 39px, 18px 19px, 33px 2px, 45px 7px, 46px 21px, 29px 44px, 14px 153px);
-            clip-path: polygon(4px 39px, 18px 19px, 33px 2px, 45px 7px, 46px 21px, 29px 44px, 14px 153px);
-   }
-.venom-tooth:nth-child(5){
-    position: absolute;
-    top: 52%;
-    left: 49%;
-    -webkit-transform: translateX(-49%) translateY(-50%);
-        -ms-transform: translateX(-49%) translateY(-50%);
-            transform: translateX(-49%) translateY(-50%);
-    width: 60px;
-    height: 160px;
-    background: white;
-    -webkit-clip-path: polygon(5px 55px, 17px 25px, 32px 9px, 50px 12px, 54px 25px, 46px 57px, 10px 161px);
-            clip-path: polygon(5px 55px, 17px 25px, 32px 9px, 50px 12px, 54px 25px, 46px 57px, 10px 161px);
-   }
+      position: absolute;
+      top: 52%;
+      left: 41%;
+      -webkit-transform: translateX(-49%) translateY(-50%);
+          -ms-transform: translateX(-49%) translateY(-50%);
+              transform: translateX(-49%) translateY(-50%);
+      width: 50px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        4px 39px,
+        18px 19px,
+        33px 2px,
+        45px 7px,
+        46px 21px,
+        29px 44px,
+        14px 153px
+      );
+              clip-path: polygon(
+        4px 39px,
+        18px 19px,
+        33px 2px,
+        45px 7px,
+        46px 21px,
+        29px 44px,
+        14px 153px
+      );
+    }
+.venom-tooth:nth-child(5) {
+      position: absolute;
+      top: 52%;
+      left: 49%;
+      -webkit-transform: translateX(-49%) translateY(-50%);
+          -ms-transform: translateX(-49%) translateY(-50%);
+              transform: translateX(-49%) translateY(-50%);
+      width: 60px;
+      height: 160px;
+      background: white;
+      -webkit-clip-path: polygon(
+        5px 55px,
+        17px 25px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        46px 57px,
+        10px 161px
+      );
+              clip-path: polygon(
+        5px 55px,
+        17px 25px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        46px 57px,
+        10px 161px
+      );
+    }
 .venom-tooth:nth-child(6) {
-    position: absolute;
-    top: 52%;
-    left: 59%;
-    -webkit-transform: translateX(-54%) translateY(-50%);
-        -ms-transform: translateX(-54%) translateY(-50%);
-            transform: translateX(-54%) translateY(-50%);
-    width: 60px;
-    height: 160px;
-    background: white;
-    -webkit-clip-path: polygon(12px 56px, 17px 25px, 32px 9px, 50px 12px, 54px 25px, 60px 43px, 29px 152px);
-            clip-path: polygon(12px 56px, 17px 25px, 32px 9px, 50px 12px, 54px 25px, 60px 43px, 29px 152px);
-   }
-.venom-tooth:nth-child(7){
-    position: absolute;
-    top: 52%;
-    left: 67%;
-    -webkit-transform: translateX(-54%) translateY(-50%);
-        -ms-transform: translateX(-54%) translateY(-50%);
-            transform: translateX(-54%) translateY(-50%);
-    width: 60px;
-    height: 160px;
-    background: white;
-    -webkit-clip-path: polygon(28px 55px, 19px 20px, 32px 9px, 50px 12px, 54px 25px, 60px 43px, 14px 157px);
-            clip-path: polygon(28px 55px, 19px 20px, 32px 9px, 50px 12px, 54px 25px, 60px 43px, 14px 157px);
-   }
+      position: absolute;
+      top: 52%;
+      left: 59%;
+      -webkit-transform: translateX(-54%) translateY(-50%);
+          -ms-transform: translateX(-54%) translateY(-50%);
+              transform: translateX(-54%) translateY(-50%);
+      width: 60px;
+      height: 160px;
+      background: white;
+      -webkit-clip-path: polygon(
+        12px 56px,
+        17px 25px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        60px 43px,
+        29px 152px
+      );
+              clip-path: polygon(
+        12px 56px,
+        17px 25px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        60px 43px,
+        29px 152px
+      );
+    }
+.venom-tooth:nth-child(7) {
+      position: absolute;
+      top: 52%;
+      left: 67%;
+      -webkit-transform: translateX(-54%) translateY(-50%);
+          -ms-transform: translateX(-54%) translateY(-50%);
+              transform: translateX(-54%) translateY(-50%);
+      width: 60px;
+      height: 160px;
+      background: white;
+      -webkit-clip-path: polygon(
+        28px 55px,
+        19px 20px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        60px 43px,
+        14px 157px
+      );
+              clip-path: polygon(
+        28px 55px,
+        19px 20px,
+        32px 9px,
+        50px 12px,
+        54px 25px,
+        60px 43px,
+        14px 157px
+      );
+    }
 .venom-tooth:nth-child(8) {
-    position: absolute;
-    top: 47%;
-    right: 18%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 50px;
-    height: 140px;
-    background: white;
-    -webkit-clip-path: polygon(33px 37px, 26px 23px, 32px 9px, 50px 12px, 51px 32px, 50px 62px, 18px 137px);
-            clip-path: polygon(33px 37px, 26px 23px, 32px 9px, 50px 12px, 51px 32px, 50px 62px, 18px 137px);
-   }
-.venom-tooth:nth-child(9){
-    position: absolute;
-    top: 45%;
-    right: 12%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 50px;
-    height: 140px;
-    background: white;
-    -webkit-clip-path: polygon(31px 52px, 25px 30px, 32px 9px, 50px 12px, 49px 31px, 42px 75px, 13px 129px);
-            clip-path: polygon(31px 52px, 25px 30px, 32px 9px, 50px 12px, 49px 31px, 42px 75px, 13px 129px);
-   }
+      position: absolute;
+      top: 47%;
+      right: 18%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 50px;
+      height: 140px;
+      background: white;
+      -webkit-clip-path: polygon(
+        33px 37px,
+        26px 23px,
+        32px 9px,
+        50px 12px,
+        51px 32px,
+        50px 62px,
+        18px 137px
+      );
+              clip-path: polygon(
+        33px 37px,
+        26px 23px,
+        32px 9px,
+        50px 12px,
+        51px 32px,
+        50px 62px,
+        18px 137px
+      );
+    }
+.venom-tooth:nth-child(9) {
+      position: absolute;
+      top: 45%;
+      right: 12%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 50px;
+      height: 140px;
+      background: white;
+      -webkit-clip-path: polygon(
+        31px 52px,
+        25px 30px,
+        32px 9px,
+        50px 12px,
+        49px 31px,
+        42px 75px,
+        13px 129px
+      );
+              clip-path: polygon(
+        31px 52px,
+        25px 30px,
+        32px 9px,
+        50px 12px,
+        49px 31px,
+        42px 75px,
+        13px 129px
+      );
+    }
 .venom-tooth:nth-child(10) {
-    position: absolute;
-    top: 100%;
-    left: 60%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 60px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(10px 116px, 24px 93px, 31px 69px, 38px 31px, 46px 68px, 46px 104px, 44px 115px, 34px 124px, 20px 129px);
-            clip-path: polygon(10px 116px, 24px 93px, 31px 69px, 38px 31px, 46px 68px, 46px 104px, 44px 115px, 34px 124px, 20px 129px); 
-   }
-.venom-tooth:nth-child(11){
-    position: absolute;
-    top: 100%;
-    left: 52%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 60px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(10px 116px, 14px 93px, 20px 74px, 37px 6px, 40px 65px, 46px 89px, 44px 115px, 34px 124px, 20px 129px);
-            clip-path: polygon(10px 116px, 14px 93px, 20px 74px, 37px 6px, 40px 65px, 46px 89px, 44px 115px, 34px 124px, 20px 129px);
-   }
+      position: absolute;
+      top: 100%;
+      left: 60%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 60px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        10px 116px,
+        24px 93px,
+        31px 69px,
+        38px 31px,
+        46px 68px,
+        46px 104px,
+        44px 115px,
+        34px 124px,
+        20px 129px
+      );
+              clip-path: polygon(
+        10px 116px,
+        24px 93px,
+        31px 69px,
+        38px 31px,
+        46px 68px,
+        46px 104px,
+        44px 115px,
+        34px 124px,
+        20px 129px
+      );
+    }
+.venom-tooth:nth-child(11) {
+      position: absolute;
+      top: 100%;
+      left: 52%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 60px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        10px 116px,
+        14px 93px,
+        20px 74px,
+        37px 6px,
+        40px 65px,
+        46px 89px,
+        44px 115px,
+        34px 124px,
+        20px 129px
+      );
+              clip-path: polygon(
+        10px 116px,
+        14px 93px,
+        20px 74px,
+        37px 6px,
+        40px 65px,
+        46px 89px,
+        44px 115px,
+        34px 124px,
+        20px 129px
+      );
+    }
 .venom-tooth:nth-child(12) {
-    position: absolute;
-    top: 100%;
-    left: 45%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 60px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(5px 116px, 7px 91px, 14px 67px, 24px 22px, 32px 65px, 32px 89px, 36px 106px, 34px 124px, 20px 129px);
-            clip-path: polygon(5px 116px, 7px 91px, 14px 67px, 24px 22px, 32px 65px, 32px 89px, 36px 106px, 34px 124px, 20px 129px);
-   }
-.venom-tooth:nth-child(13){
-    position: absolute;
-    top: 100%;
-    left: 37%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 60px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(6px 110px, 7px 91px, 14px 67px, 32px 37px, 31px 81px, 34px 105px, 34px 124px, 18px 124px);
-            clip-path: polygon(6px 110px, 7px 91px, 14px 67px, 32px 37px, 31px 81px, 34px 105px, 34px 124px, 18px 124px);
-   }
+      position: absolute;
+      top: 100%;
+      left: 45%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 60px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        5px 116px,
+        7px 91px,
+        14px 67px,
+        24px 22px,
+        32px 65px,
+        32px 89px,
+        36px 106px,
+        34px 124px,
+        20px 129px
+      );
+              clip-path: polygon(
+        5px 116px,
+        7px 91px,
+        14px 67px,
+        24px 22px,
+        32px 65px,
+        32px 89px,
+        36px 106px,
+        34px 124px,
+        20px 129px
+      );
+    }
+.venom-tooth:nth-child(13) {
+      position: absolute;
+      top: 100%;
+      left: 37%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 60px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        6px 110px,
+        7px 91px,
+        14px 67px,
+        32px 37px,
+        31px 81px,
+        34px 105px,
+        34px 124px,
+        18px 124px
+      );
+              clip-path: polygon(
+        6px 110px,
+        7px 91px,
+        14px 67px,
+        32px 37px,
+        31px 81px,
+        34px 105px,
+        34px 124px,
+        18px 124px
+      );
+    }
 .venom-tooth:nth-child(14) {
-    position: absolute;
-    top: 100%;
-    left: 69%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    width: 60px;
-    height: 150px;
-    background: white;
-    -webkit-clip-path: polygon(11px 108px, 10px 92px, 14px 67px, 16px 36px, 31px 81px, 34px 99px, 28px 115px, 16px 119px);
-            clip-path: polygon(11px 108px, 10px 92px, 14px 67px, 16px 36px, 31px 81px, 34px 99px, 28px 115px, 16px 119px);
-   }
+      position: absolute;
+      top: 100%;
+      left: 69%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 60px;
+      height: 150px;
+      background: white;
+      -webkit-clip-path: polygon(
+        11px 108px,
+        10px 92px,
+        14px 67px,
+        16px 36px,
+        31px 81px,
+        34px 99px,
+        28px 115px,
+        16px 119px
+      );
+              clip-path: polygon(
+        11px 108px,
+        10px 92px,
+        14px 67px,
+        16px 36px,
+        31px 81px,
+        34px 99px,
+        28px 115px,
+        16px 119px
+      );
+    }
+.venom-tooth:nth-child(15) {
+      position: absolute;
+      top: 36%;
+      left: 20%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 50px;
+      height: 100px;
+      background: white;
+      -webkit-clip-path: polygon(
+        -1px 37px,
+        8px 12px,
+        20px 7px,
+        38px 14px,
+        18px 27px,
+        24px 101px
+      );
+              clip-path: polygon(
+        -1px 37px,
+        8px 12px,
+        20px 7px,
+        38px 14px,
+        18px 27px,
+        24px 101px
+      );
+    }
+.venom-tooth:nth-child(16) {
+      position: absolute;
+      top: 39%;
+      right: 6%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      width: 50px;
+      height: 140px;
+      background: white;
+      -webkit-clip-path: polygon(31px 52px, 25px 30px, 32px 9px, 50px 12px, 49px 31px, 44px 60px, 20px 105px);
+              clip-path: polygon(31px 52px, 25px 30px, 32px 9px, 50px 12px, 49px 31px, 44px 60px, 20px 105px);
+    }
 
 
 /*# sourceMappingURL=/css-venom.e31bb0bc.css.map */
